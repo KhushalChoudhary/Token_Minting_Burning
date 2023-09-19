@@ -18,6 +18,11 @@ Balances Mapping: The contract employs a mapping named balances to associate Eth
 
 The mint function facilitates the creation of new tokens, a process commonly referred to as minting. It takes two parameters: _to (recipient's address) and _value (the number of tokens to be minted), the function increases the totalSupply by the specified _value, effectively adding new tokens to the overall token supply. Simultaneously, it increments the balance of the recipient's address in the balances mapping by the same _value, reflecting the minted tokens in the recipient's account.
 
+## Author 
+
+Khushal Choudhary
+
+
 **Burn Function - Token Destruction:**
 
 The burn function serves as the counterpart to the mint function, enabling the destruction of tokens. It takes a single parameter: _value (the number of tokens to be burned). To prevent unauthorized token destruction, the function requires that the sender's balance is greater than or equal to _value. If this condition is met, the function decreases the totalSupply by _value, effectively reducing the overall token supply. Additionally, it decreases the sender's token balance in the balances mapping by _value, signifying the burned tokens. This step ensures that the sender's balance accurately reflects the burned tokens.
